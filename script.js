@@ -33,12 +33,12 @@ const update =()=>{
   progress.style.width = ((actives.length-1)/(circles.length-1))*100+"%"
 
   if (currentActive=== 1) {
-    prev.disabled=true
+    return prev.disabled=true
   }else if (currentActive=== circles.length) {
-    next.disabled=true
+    return next.disabled=true
   }else{
     prev.disabled=false
-    next.disabled=false
+    return next.disabled=false
   }
 
 
